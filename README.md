@@ -6,6 +6,8 @@ The project will based on [gRPC](https://grpc.io/) protocol and the main part wi
 
 The main programming language will be C++. 
 
+This is a side project of the course Introduction to Software Engineering SS23 (IN0006) at Technical University of Munich. 
+
 ## Features and Goals
 ### Requirements
 
