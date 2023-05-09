@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package TimeServer;
+
+service TimeService {
+    // Set the time zone for the Client
+    
+    rpc GetTime(TimeRequest) returns (TimeResponse) {}
+}
+
+message TimeRequest {
+    enum TimeZone {
+        UTC = 0;
+        EST = 1;
+        CST = 2;
+        MST = 3;
+        PST = 4;
+    }
+    TimeZone time_zone = 1;
+}
+
+message TimeResponse {
+    string time = 1;
+}
